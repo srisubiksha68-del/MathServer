@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Samplepage</title>
+    </head>
+    <body>
+        <h1>Srisubiksha (26008987)</h1>
+        <h2>Churn Rate</h2>
+        <form method="POST">
+         {% csrf_token %}<br>
+            <label>Customerslost:</label>
+            <input type="number" name="lost" value="{{l}}"><br><br>
+
+            <label>InitialCustomers:</label>
+            <input type="number" name="initial" value="{{i}}"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+
+            <label>ChurnRate:</label>
+            <input type="number" value="{{churnrate}}"><br><br>
+
+        </form>
+    </body>
+</html>
